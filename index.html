@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="node_modules/phaser/dist/phaser-arcade-physics.min.js"></script>
+</head>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-icon-180.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<meta name="theme-color" content="#000000"/>
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body bgcolor="#000000">
+
+    <script>
+    var config = {
+        type: Phaser.AUTO,
+        scale: {
+            mode: Phaser.Scale.FIT,
+            autoCenter: Phaser.Scale.CENTER_BOTH,
+            width: 640,
+            height: 640
+        },
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 200 }
+            }
+        },
+        scene: {
+            preload: preload,
+            create: create
+        }
+    };
+
+    var game = new Phaser.Game(config);
+
+    function preload ()
+    {
+        this.load.image('ground', 'sprites/ground.png');
+        this.load.image('wall', 'sprites/wall.png');
+    }
+
+    function create ()
+    {
+        let tile_width = 16;
+        let tile_height = 16;
+        let indexX = 0;
+        let indexY = 0;
+        let tile_list = [
+            'top_right_bottom_left',
+            'top_right_bottom_null',
+            'top_right_null_left',
+            'top_null_bottom_left',
+            'null_right_bottom_left',
+        ];
+        let tile_type = {};
+        let way_counterpart = {};
+        way_counterpart['left'] = "right";
+        way_counterpart['right'] = "left";
+        way_counterpart['top'] = "bottom";
+        way_counterpart['bottom'] = "top";
+        tile_type['top_right_bottom_left'] = [
+            [1,0,0,1],
+            [0,0,0,0],
+            [0,0,0,0],
+            [1,0,0,1],
+        ];
+        tile_type['top_right_bottom_null'] = [
+            [1,0,0,1],
+            [1,0,0,0],
+            [1,0,0,0],
+            [1,0,0,1],
+        ];
+        tile_type['top_right_null_left'] = [
+            [1,0,0,1],
+            [0,0,0,0],
+            [0,0,0,0],
+            [1,1,1,1],
+        ];
+        tile_type['top_null_bottom_left'] = [
+            [1,0,0,1],
+            [0,0,0,1],
+            [0,0,0,1],
+            [1,0,0,1],
+        ];
+        tile_type['null_right_bottom_left'] = [
+            [1,1,1,1],
+            [0,0,0,0],
+            [0,0,0,0],
+            [1,0,0,1],
+        ];
+
+        let tile = 'null_right_bottom_left';
+        let prev_way = "left"
+
+        for (let i = 0; i < 20; i++) {
+            for(let k = 0; k < 4; k++){
+                for(let j = 0; j < 4;j++){
+                    let x_index = indexX + j;
+                    let y_index = indexY + k;
+                    if(tile_type[tile][k][j] == 0){
+                        this.add.image(8+(x_index*tile_width), 8+(y_index*tile_height), 'ground');
+                    }else{
+                        this.add.image(8+(x_index*tile_width), 8+(y_index*tile_height), 'wall');
+                    }
+                }
+                if(k == 3){
+                    console.log(indexX);
+                    console.log(indexY);
+                    console.log(tile);
+                    let ways = tile.split("_").filter(way => way != "null" && way != prev_way);
+                    let next_way = ways[Math.floor(Math.random() * ways.length)];
+                    console.log(next_way);
+                    while(next_way == "top"){
+                        console.log("test")
+                        next_way = ways[Math.floor(Math.random() * ways.length)];
+                    }
+                    while(next_way == "left"){
+                        console.log("test")
+                        next_way = ways[Math.floor(Math.random() * ways.length)];
+                    }
+                    console.log(next_way);
+                    let possible_ways = tile_list.filter(way => way.includes(way_counterpart[next_way]));
+                    let next_possible_way = possible_ways[Math.floor(Math.random() * possible_ways.length)];
+                    console.log(next_possible_way);
+                    tile = next_possible_way;
+                    if(next_way == 'top'){
+                        indexY -= 4;
+                    }
+                    if(next_way == 'bottom'){
+                        indexY += 4;
+                    }
+                    if(next_way == 'left'){
+                        indexX -= 4;
+                    }
+                    if(next_way == 'right'){
+                        indexX += 4;
+                    }
+                    prev_way = next_way;
+                }
+            }
+            // indexY += 4;
+            // indexX += 4;
+        }
+    }
+    </script>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('service-worker.js');
+        });
+      }
+   </script>
+</body>
+</html>
