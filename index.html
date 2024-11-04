@@ -1,678 +1,861 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-
-   <!--- Basic Page Needs
+<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!--- Basic Page Needs
    ================================================== -->
-   <meta charset="utf-8">
-	<title>Hisyam - Interactive Resume</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8" />
+    <title>Hisyam - Interactive Resume</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-   <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-	<!-- CSS
+    <!-- CSS
     ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
 
-   <!-- Script
+    <!-- Script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+    <script src="js/modernizr.js"></script>
 
-   <!-- Favicons
+    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-   <meta name="google-site-verification" content="CDhSzCj0YbyXxFMDsaBKfwqwZzcy7u6trCKPUn9jUB8" />
-   <link rel="manifest" href="manifest.json">
-   <link rel="apple-touch-icon" href="icons/apple-icon-180.png">
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta
+      name="google-site-verification"
+      content="CDhSzCj0YbyXxFMDsaBKfwqwZzcy7u6trCKPUn9jUB8"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
 
-   <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-   <link rel="apple-touch-startup-image" href="icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-   <meta name="theme-color" content="#000000"/>
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2048-2732.jpg"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2732-2048.jpg"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1668-2388.jpg"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2388-1668.jpg"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1536-2048.jpg"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2048-1536.jpg"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1668-2224.jpg"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2224-1668.jpg"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1620-2160.jpg"
+      media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2160-1620.jpg"
+      media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1284-2778.jpg"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2778-1284.jpg"
+      media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1170-2532.jpg"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2532-1170.jpg"
+      media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1125-2436.jpg"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2436-1125.jpg"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1242-2688.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2688-1242.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-828-1792.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1792-828.jpg"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1242-2208.jpg"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-2208-1242.jpg"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-750-1334.jpg"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1334-750.jpg"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-640-1136.jpg"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="icons/apple-splash-1136-640.jpg"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+    />
+    <meta name="theme-color" content="#000000" />
+  </head>
 
-</head>
-
-<body>
-
-   <!-- Header
+  <body>
+    <!-- Header
    ================================================== -->
-   <header id="home">
-
+    <header id="home">
       <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation"
+          >Show navigation</a
+        >
+        <a class="mobile-btn" href="#" title="Hide navigation"
+          >Hide navigation</a
+        >
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
+        <ul id="nav" class="nav">
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#resume">Resume</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+        </ul>
+        <!-- end #nav -->
+      </nav>
+      <!-- end #nav-wrap -->
 
       <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Hi! I'm Hisyam.</h1>
-            <h3>A <span>web developer</span>, <span>game developer</span> and <span>back-end developer</span> from Indonesia. Let's start scrolling and learn more about me.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.instagram.com/hisyam_pake_y/"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/hisyam-mohammad-432650156/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://hisyam.herokuapp.com/"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
-         </div>
+        <div class="banner-text">
+          <h1 class="responsive-headline">Hi! I'm Hisyam.</h1>
+          <h3>
+            A <span>web developer</span>, <span>game developer</span> and
+            <span>back-end developer</span> from Indonesia. Let's start
+            scrolling and learn more about me.
+          </h3>
+          <hr />
+          <ul class="social">
+            <li>
+              <a href="https://www.instagram.com/hisyam_pake_y/"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/hisyam-mohammad-432650156/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://hisyam.herokuapp.com/"
+                ><i class="fa fa-dribbble"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+        <a class="smoothscroll" href="#about"
+          ><i class="icon-down-circle"></i
+        ></a>
       </p>
+    </header>
+    <!-- Header End -->
 
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
+    <!-- About Section
    ================================================== -->
-   <section id="about">
-
+    <section id="about">
       <div class="row">
+        <div class="three columns">
+          <img class="profile-pic" src="images/profile-pic.jpeg" alt="" />
+        </div>
 
-         <div class="three columns">
+        <div class="nine columns main-col">
+          <h2>About Me</h2>
 
-            <img class="profile-pic"  src="images/profile-pic.jpeg" alt="" />
+          <p>
+            I'm a 22 years old <b>Web Developer</b>, <b>Game Developer</b>, and
+            <b>Back-End Developer</b> who live in Indonesia.
+          </p>
 
-         </div>
+          <div class="row">
+            <div class="columns contact-details">
+              <h2>Contact Details</h2>
+              <p class="address">
+                <span>Mohammad Hisyam</span><br />
+                <span
+                  >Kota Batam, Kepulauan Riau<br />
+                  Indonesia </span
+                ><br />
+                <span>+62 853-2981-1585</span><br />
+                <span>mohammadhisyam4@gmail.com</span>
+              </p>
+            </div>
 
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>I'm a 22 years old <b>Web Developer</b>, <b>Game Developer</b>, and <b>Back-End Developer</b> who live in Indonesia. 
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Mohammad Hisyam</span><br>
-						   <span>Kota Batam, Kepulauan Riau<br>
-						         Indonesia
-                     </span><br>
-						   <span>+62 853-2981-1585</span><br>
-                     <span>mohammadhisyam4@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <!-- <div class="columns download">
+            <!-- <div class="columns download">
                   <p>
                      <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
                   </p>
                </div> -->
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end .main-col -->
       </div>
+    </section>
+    <!-- About Section End-->
 
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
+    <!-- Resume Section
    ================================================== -->
-   <section id="resume">
-
+    <section id="resume">
       <!-- Education
       ----------------------------------------------- -->
       <div class="row education">
+        <div class="three columns header-col">
+          <h1><span>Education</span></h1>
+        </div>
 
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
+        <div class="nine columns main-col">
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Batam State Polytechnic</h3>
+              <p class="info">
+                Bachelor's degree, Multimedia and Networking
+                <span>&bull;</span> <em class="date">October 2019 - Present</em>
+              </p>
 
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Batam State Polytechnic</h3>
-                  <p class="info">Bachelor's degree, Multimedia and Networking <span>&bull;</span> <em class="date">October 2019 - Present</em></p>
-
-                  <!-- <p>
+              <!-- <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                   ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                   Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
                   </p> -->
+            </div>
+          </div>
+          <!-- item end -->
 
-               </div>
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Vocational High School</h3>
+              <p class="info">
+                Computer and Networking <span>&bull;</span>
+                <em class="date">June 2014 - June 2017</em>
+              </p>
 
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Vocational High School</h3>
-                  <p class="info">Computer and Networking <span>&bull;</span> <em class="date">June 2014 - June 2017</em></p>
-
-                  <!-- <p>
+              <!-- <p>
                   This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                   Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
                   nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
                   ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
                   </p> -->
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
+            </div>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- main-col end -->
+      </div>
+      <!-- End Education -->
 
       <!-- Work
       ----------------------------------------------- -->
       <div class="row work">
+        <div class="three columns header-col">
+          <h1><span>Work</span></h1>
+        </div>
 
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
+        <div class="nine columns main-col">
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Tigernix Pte Ltd</h3>
+              <p class="info">
+                ERP Software Engineer <span>&bull;</span>
+                <em class="date">October 2018 - Present</em>
+              </p>
 
-         <div class="nine columns main-col">
+              <p>
+                Develop, support, and mantain web based ERP application (Odoo).
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
 
-            <div class="row item">
+          <div class="row item">
+            <div class="twelve columns">
+              <h3>Freelance</h3>
+              <p class="info">
+                Web Developer and Web Designer<span>&bull;</span>
+                <em class="date">June 2017 - October 2018</em>
+              </p>
 
-               <div class="twelve columns">
-
-                  <h3>Tigernix Pte Ltd</h3>
-                  <p class="info">ERP Software Engineer <span>&bull;</span> <em class="date">October 2018 - Present</em></p>
-
-                  <p>
-                  Develop, support, and mantain web based ERP application (Odoo).
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Freelance</h3>
-                  <p class="info">Web Developer and Web Designer<span>&bull;</span> <em class="date">June 2017 - October 2018</em></p>
-
-                  <p>
-                  Doing various freelance web projects, mostly Wordpress and Laravel.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
+              <p>
+                Doing various freelance web projects, mostly Wordpress and
+                Laravel.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+        </div>
+        <!-- main-col end -->
+      </div>
+      <!-- End Work -->
 
       <!-- Skills
       ----------------------------------------------- -->
       <div class="row skill">
+        <div class="three columns header-col">
+          <h1><span>Skills</span></h1>
+        </div>
 
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+        <div class="nine columns main-col">
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
             voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
             voluptatem sequi nesciunt.
             </p> -->
 
-				<div class="bars">
+          <div class="bars">
+            <ul class="skills">
+              <!-- <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li> -->
+              <!-- <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li> -->
+              <li>
+                <span class="bar-expand wordpress"></span><em>Wordpress</em>
+              </li>
+              <li><span class="bar-expand css"></span><em>CSS</em></li>
+              <li><span class="bar-expand html5"></span><em>HTML</em></li>
+              <li>
+                <span class="bar-expand jquery"></span><em>Javascript</em>
+              </li>
+              <li><span class="bar-expand php"></span><em>PHP</em></li>
+              <li><span class="bar-expand sql"></span><em>SQL</em></li>
+              <li><span class="bar-expand python"></span><em>Python</em></li>
+              <li><span class="bar-expand odoo"></span><em>Odoo</em></li>
+              <li><span class="bar-expand unity"></span><em>Unity</em></li>
+              <li><span class="bar-expand laravel"></span><em>Laravel</em></li>
+              <li><span class="bar-expand linux"></span><em>Linux</em></li>
+            </ul>
+          </div>
+          <!-- end skill-bars -->
+        </div>
+        <!-- main-col end -->
+      </div>
+      <!-- End skills -->
+    </section>
+    <!-- Resume Section End-->
 
-				   <ul class="skills">
-					   <!-- <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li> -->
-                  <!-- <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li> -->
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML</em></li>
-                  <li><span class="bar-expand jquery"></span><em>Javascript</em></li>
-                  <li><span class="bar-expand php"></span><em>PHP</em></li>
-                  <li><span class="bar-expand sql"></span><em>SQL</em></li>
-                  <li><span class="bar-expand python"></span><em>Python</em></li>
-                  <li><span class="bar-expand odoo"></span><em>Odoo</em></li>
-                  <li><span class="bar-expand unity"></span><em>Unity</em></li>
-                  <li><span class="bar-expand laravel"></span><em>Laravel</em></li>
-                  <li><span class="bar-expand linux"></span><em>Linux</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
+    <!-- Portfolio Section
    ================================================== -->
-   <section id="portfolio">
-
+    <section id="portfolio">
       <div class="row">
+        <div class="twelve columns collapsed">
+          <h1>Check Out Some of My Works.</h1>
 
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/nodejs.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Node.js Crypto Trading Bot with Indodax APi</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+          <!-- portfolio-wrapper -->
+          <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-01" title="">
+                  <img alt="" src="images/portfolio/nodejs.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Node.js Crypto Trading Bot with Indodax APi</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-up-open"></i></div>
+                </a>
+              </div>
+            </div>
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Unity WebGL Platformer Game</h5>
-                              <p>Game Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-01" title="">
+                  <img alt="" src="images/portfolio/nodejs.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Node.js Crypto Trading Bot with Indodax APi</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/odoo.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Odoo Community Module Customization</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-02" title="">
+                  <img alt="" src="images/portfolio/console.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Unity WebGL Platformer Game</h5>
+                      <p>Game Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/laravel.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Laravel RESTful API</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-03" title="">
+                  <img alt="" src="images/portfolio/odoo.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Odoo Community Module Customization</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/ivanmode.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Ivanmode.com - Wordpress Site</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-04" title="">
+                  <img alt="" src="images/portfolio/laravel.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Laravel RESTful API</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/kontraktorasia.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Kontraktor Asia - Wordpress Site</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-05" title="">
+                  <img alt="" src="images/portfolio/ivanmode.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Ivanmode.com - Wordpress Site</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/sakinahproperty.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Sakinah Property - Wordpress Site</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-06" title="">
+                  <img alt="" src="images/portfolio/kontraktorasia.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Kontraktor Asia - Wordpress Site</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/delikpanturanews.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Delik Pantura News - Wordpress Site</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-07" title="">
+                  <img alt="" src="images/portfolio/sakinahproperty.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Sakinah Property - Wordpress Site</h5>
+                      <p>Web Development</p>
+                    </div>
                   </div>
-          		</div>  <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
 
-            </div> <!-- portfolio-wrapper end -->
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+                <a href="#modal-08" title="">
+                  <img alt="" src="images/portfolio/delikpanturanews.png" />
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+                      <h5>Delik Pantura News - Wordpress Site</h5>
+                      <p>Web Development</p>
+                    </div>
+                  </div>
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+              </div>
+            </div>
+            <!-- item end -->
+          </div>
+          <!-- portfolio-wrapper end -->
+        </div>
+        <!-- twelve columns end -->
 
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
+        <!-- Modal Popup
 	      --------------------------------------------------------------- -->
 
-         <div id="modal-01" class="popup-modal mfp-hide">
+        <div id="modal-01" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-crypto-bot.png"
+            alt=""
+          />
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-crypto-bot.png" alt="" />
+          <div class="description-box">
+            <h4>Node.js Crypto Trading Bot with Indodax APi</h4>
+            <p>
+              Node.js crypto tranding bot using Indodax APi, socket.io, and
+              tulind library.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Node.js, Javascript, Web
+              Development</span
+            >
+          </div>
 
-		      <div class="description-box">
-			      <h4>Node.js Crypto Trading Bot with Indodax APi</h4>
-			      <p>Node.js crypto tranding bot using Indodax APi, socket.io, and tulind library.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Node.js, Javascript, Web Development</span>
-		      </div>
+          <div class="link-box">
+            <a href="#" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-01 End -->
 
-            <div class="link-box">
-               <a href="#" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+        <div id="modal-02" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-console.png"
+            alt=""
+          />
 
-	      </div><!-- modal-01 End -->
+          <div class="description-box">
+            <h4>Unity WebGL Platformer Game</h4>
+            <p>Basic web platformer game using Unity.</p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Unity, Game Development</span
+            >
+          </div>
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+          <div class="link-box">
+            <a href="interactive-game-resume/index.html" target="_blank"
+              >Details</a
+            >
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-02 End -->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.png" alt="" />
+        <div id="modal-03" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-odoo.png"
+            alt=""
+          />
 
-		      <div class="description-box">
-			      <h4>Unity WebGL Platformer Game</h4>
-			      <p>Basic web platformer game using Unity.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Unity, Game Development</span>
-		      </div>
+          <div class="description-box">
+            <h4>Odoo Community Module Customization</h4>
+            <p>Web based ERP customization with Odoo (Python).</p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Odoo, ERP, Web Development</span
+            >
+          </div>
 
-            <div class="link-box">
-               <a href="interactive-game-resume/index.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+          <div class="link-box">
+            <a href="#blank" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-03 End -->
 
-	      </div><!-- modal-02 End -->
+        <div id="modal-04" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-laravel.png"
+            alt=""
+          />
 
-         <div id="modal-03" class="popup-modal mfp-hide">
+          <div class="description-box">
+            <h4>Laravel RESTful API</h4>
+            <p>Basic Laravel RESTful API.</p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Laravel, PHP, Web Development</span
+            >
+          </div>
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-odoo.png" alt="" />
+          <div class="link-box">
+            <a href="#blank" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-04 End -->
 
-		      <div class="description-box">
-			      <h4>Odoo Community Module Customization</h4>
-			      <p>Web based ERP customization with Odoo (Python).</p>
-               <span class="categories"><i class="fa fa-tag"></i>Odoo, ERP, Web Development</span>
-		      </div>
+        <div id="modal-05" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-ivanmode.png"
+            alt=""
+          />
 
-            <div class="link-box">
-               <a href="#blank" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+          <div class="description-box">
+            <h4>Ivanmode.com - Wordpress Site</h4>
+            <p>
+              Wordpress site for Ivanmode.com, a fashion shop to sell all their
+              products.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Wordpress, Web Development</span
+            >
+          </div>
 
-	      </div><!-- modal-03 End -->
+          <div class="link-box">
+            <a href="#blank" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-05 End -->
 
-         <div id="modal-04" class="popup-modal mfp-hide">
+        <div id="modal-06" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-kontraktorasia.png"
+            alt=""
+          />
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-laravel.png" alt="" />
+          <div class="description-box">
+            <h4>Kontraktor Asia - Wordpress Site</h4>
+            <p>Wordpress site for Kontraktor Asia, a construction company.</p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Wordpress, Web Development</span
+            >
+          </div>
 
-		      <div class="description-box">
-			      <h4>Laravel RESTful API</h4>
-			      <p>Basic Laravel RESTful API.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Laravel, PHP, Web Development</span>
-		      </div>
+          <div class="link-box">
+            <a href="#blank" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-06 End -->
 
-            <div class="link-box">
-               <a href="#blank" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+        <div id="modal-07" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-sakinahproperty.png"
+            alt=""
+          />
 
-	      </div><!-- modal-04 End -->
+          <div class="description-box">
+            <h4>Sakinah Property - Wordpress Site</h4>
+            <p>
+              Wordpress site for Sakinah Property to display and sell
+              properties.
+            </p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Wordpress, Web Development</span
+            >
+          </div>
 
-         <div id="modal-05" class="popup-modal mfp-hide">
+          <div class="link-box">
+            <a href="#blank" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-07 End -->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-ivanmode.png" alt="" />
+        <div id="modal-08" class="popup-modal mfp-hide">
+          <img
+            class="scale-with-grid"
+            src="images/portfolio/modals/m-delikpanturanews.png"
+            alt=""
+          />
 
-		      <div class="description-box">
-			      <h4>Ivanmode.com - Wordpress Site</h4>
-			      <p>Wordpress site for Ivanmode.com, a fashion shop to sell all their products.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Wordpress, Web Development</span>
-		      </div>
+          <div class="description-box">
+            <h4>Delik Pantura News - Wordpress Site</h4>
+            <p>Wordpress site for Delik Pantura to display the news.</p>
+            <span class="categories"
+              ><i class="fa fa-tag"></i>Wordpress, Web Development</span
+            >
+          </div>
 
-            <div class="link-box">
-               <a href="#blank" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-kontraktorasia.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Kontraktor Asia - Wordpress Site</h4>
-			      <p>Wordpress site for Kontraktor Asia, a construction company.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Wordpress, Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#blank" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-sakinahproperty.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Sakinah Property - Wordpress Site</h4>
-			      <p>Wordpress site for Sakinah Property to display and sell properties. </p>
-               <span class="categories"><i class="fa fa-tag"></i>Wordpress, Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#blank" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-delikpanturanews.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Delik Pantura News - Wordpress Site</h4>
-			      <p>Wordpress site for Delik Pantura to display the news.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Wordpress, Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="#blank" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span></span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">Under Construction</span></h2>
-            <p><span class="lead">This website is still under development.</span></p>
-
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
+          <div class="link-box">
+            <a href="#blank" target="_blank">Details</a>
+            <a class="popup-modal-dismiss">Close</a>
+          </div>
+        </div>
+        <!-- modal-01 End -->
       </div>
+      <!-- row End -->
+    </section>
+    <!-- Portfolio Section End-->
 
-   </section> <!-- Call-To-Action Section End-->
-
-   <!-- footer
+    <!-- Call-To-Action Section
    ================================================== -->
-   <footer>
-
+    <section id="call-to-action">
       <div class="row">
+        <div class="two columns header-col">
+          <h1><span></span></h1>
+        </div>
 
-         <div class="twelve columns">
+        <div class="seven columns">
+          <h2><span class="lead">Under Construction</span></h2>
+          <p>
+            <span class="lead">This website is still under development.</span>
+          </p>
+        </div>
 
-            <ul class="social-links">
-               <li><a href="https://www.instagram.com/hisyam_pake_y/"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/hisyam-mohammad-432650156/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://hisyam.herokuapp.com/"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+        <div class="three columns action"></div>
       </div>
+    </section>
+    <!-- Call-To-Action Section End-->
 
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
+    <!-- footer
    ================================================== -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <footer>
+      <div class="row">
+        <div class="twelve columns">
+          <ul class="social-links">
+            <li>
+              <a href="https://www.instagram.com/hisyam_pake_y/"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/hisyam-mohammad-432650156/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://hisyam.herokuapp.com/"
+                ><i class="fa fa-dribbble"></i
+              ></a>
+            </li>
+          </ul>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-   <script>
+          <ul class="copyright">
+            <li>&copy; Copyright 2014 CeeVee</li>
+            <li>
+              Design by
+              <a
+                href="http://www.styleshout.com/"
+                title="Styleshout"
+                target="_blank"
+                >Styleshout</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#home"
+            ><i class="icon-up-open"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
+    </script>
+    <script
+      type="text/javascript"
+      src="js/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+    <script>
       // Check that service workers are supported
-      if ('serviceWorker' in navigator) {
+      if ("serviceWorker" in navigator) {
         // Use the window load event to keep the page load performant
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js');
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
         });
       }
-   </script>
-</body>
-
+    </script>
+  </body>
 </html>
